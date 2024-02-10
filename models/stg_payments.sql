@@ -1,0 +1,4 @@
+select 
+ID, ORDERID, PAYMENTMETHOD, STATUS, AMOUNT, CREATED, _BATCHED_AT,
+{{cents_to_dollars('AMOUNT','3')}} As amounttt
+From RAW.STRIPE.PAYMENT
